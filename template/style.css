@@ -1,0 +1,50 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font: 1.6rem Lato;
+	height: 100vh;
+	margin: 0;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: "header" "main" "footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 5rem 1fr 5rem;
+	height: 100%;
+}
+.header {
+	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+	background-color: lightsteelblue;
+	align-items: center;
+	padding: 2rem;
+}
+.brand a {
+	color: rgb(18, 45, 71);
+	font-size: 3rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+.header-links a {
+	color: rgb(18, 45, 71);
+	text-decoration: none;
+}
+.header-links a:hover {
+	color: #ffffff;
+}
+.main {
+	grid-area: main;
+}
+.footer {
+	grid-area: footer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(68, 98, 138);
+	color: #ffffff;
+}
