@@ -1,6 +1,10 @@
 import React from 'react';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 import data from './data';
 import './App.css';
+import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './Screens/ProductScreen';
+
 
 function App() {
   return (
@@ -8,7 +12,7 @@ function App() {
       <div className="grid-container">
           <header className="header">
               <div className="brand">
-                  <a href="index.html">visual oasis</a>
+                  <Link to="/">visual oasis</Link>
               </div>
               <div className="header-links">
                   <a href="cart.html">Cart</a>
@@ -18,24 +22,9 @@ function App() {
           
           <main className="main">
               <div className="content">
-                <Route path="/products/:id" component={ProductScreen}/>
-                <Route path="/" exact={true} compomnent={HomeScreen}/>
-                  <ul className="products">
-                    {data.products.map(product => 
-                    <li>
-                          <div className="product">
-                              <img className="product-image" src={product.image} alt="product image"/>
-                              <div className="product-name">
-                                  <a href="product.html">{product.name}</a>
-                              </div>
-                              <div className="product-description">{product.description}</div>
-                              <div className="product-size">{product.size}</div>
-                              <div className="product-price">${product.price}</div>
-                          </div>
-                      </li>)
-                    }
-                      
-                  </ul>
+                <Route path="/product/:id" component={ProductScreen}/>
+                <Route path="/" exact={true} component={HomeScreen}/>
+                  
               </div>
           </main>
           <footer className="footer">

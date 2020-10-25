@@ -9,6 +9,10 @@ body {
 	margin: 0;
 }
 
+#root {
+	height: 100%;
+}
+
 .grid-container {
 	display: grid;
 	grid-template-areas: "header" "main" "footer";
@@ -94,4 +98,31 @@ a {
 .product-image {
 	max-width: 35rem;
 	max-height: 35rem;
+}
+
+/* Product Details */
+.back-to-result {
+	padding: 1rem;
+}
+.details {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 1.5rem;
+}
+.details-image img {
+	max-width: 50rem;
+	max-height: 50rem;
+	padding: 0 2rem;
+}
+.details-info ul {
+	list-style: none;
+	padding: 0 2rem;
+}
+.details-info li {
+	margin-bottom: 1rem;
+}
+.details-info h3 {
+	color: rgb(18, 45, 71);
 }
