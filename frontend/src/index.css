@@ -31,35 +31,6 @@ body {
 	text-decoration: none;
 }
 
-/* .categories-dropdown a {
-	color: rgb(18, 45, 71);
-}
-
-.categories-header {
-	font-weight: bold;
-}
-
-.categories-dropdown {
-	position: relative;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	z-index: 1;
-	min-width: 15rem;
-	background-color: bisque;
-}
-
-.dropdown-content a {
-	padding-top: 5px;
-	display: content;
-}
-
-.categories-dropdown:hover .dropdown-content {
-	display: block;
-} */
-
 .header-links a {
 	color: rgb(18, 45, 71);
 	text-decoration: none;
