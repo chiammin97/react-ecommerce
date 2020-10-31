@@ -126,3 +126,16 @@ a {
 .details-info h3 {
 	color: rgb(18, 45, 71);
 }
+.details-info button {
+	width: 35rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	font: 1.7rem Lato;
+	background-color: lightsteelblue;
+	border-style: none;
+	outline: none;
+	cursor: pointer;
+}
+.details-info button:hover {
+	background-color: rgb(188, 204, 224);
+}
