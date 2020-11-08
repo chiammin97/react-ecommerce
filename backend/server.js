@@ -4,7 +4,7 @@ const data = require ("./data")
 const app = express();
 
 app.get("/api/products", (req, res) => {
-    res.send(data.products);
+    res.json(data.products);
 })
 
 app.listen(5000, () => {
