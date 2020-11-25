@@ -7,7 +7,8 @@ module.exports = {
             image: '/images/jadeite-blooms.png',
             description: 'Polymer clay and hypoallergenic - stainless steel studs',
             size: '3.6" (length)',
-            price: '89'
+            price: '89',
+            countInStock: 6,
         },
         {
             _id: '2',
@@ -16,7 +17,8 @@ module.exports = {
             image: '/images/lilac-on-lime.png',
             description: 'Polymer clay and hypoallergenic - stainless steel studs',
             size: '3" (length)',
-            price: '43'
+            price: '43',
+            countInStock: 0,
         },
         {
             _id: '3',
